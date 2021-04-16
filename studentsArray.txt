@@ -1,0 +1,9 @@
+FirstName : 3, LastName : 45, Gender : 345, Year : 34, Mark : 34.0
+FirstName : fghj, LastName : fghj, Gender : ghjk, Year : 678, Mark : 567.0
+FirstName : fghjk, LastName : hjkl, Gender : fgh, Year : 678, Mark : 5678.0
+FirstName : yuio, LastName : hjkl, Gender : jkl;, Year : 678, Mark : 567.0
+FirstName : hjkl;, LastName : ghjkl, Gender : hjkl, Year : 678, Mark : 7789.0
+FirstName : bhjk, LastName : uio, Gender : hui, Year : 678, Mark : 78.0
+FirstName : Ani, LastName : Manukyan, Gender : female, Year : 1995, Mark : 94.5
+FirstName : Anahit, LastName : Manukyan, Gender : female, Year : 1996, Mark : 97.8
+FirstName : Armen, LastName : Navasardyan, Gender : male, Year : 1999, Mark : 87.9
