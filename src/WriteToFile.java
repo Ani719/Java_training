@@ -5,21 +5,21 @@ public class WriteToFile {
     private String path;
     private boolean appendFile = false;
 
-    WriteToFile(String file_name, boolean append){
+    WriteToFile(String file_name, boolean append) {
         path = file_name;
         appendFile = append;
 
 
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
         Student student1 = new Student();
         Student student2 = new Student();
         Student student3 = new Student();
 
-        Student[] students = new Student[1];
+        Student[] students = new Student[3];
         students[0] = student1;
         students[1] = student2;
         students[2] = student3;
@@ -48,14 +48,17 @@ public class WriteToFile {
         ReadFile read = new ReadFile("studentsArray.txt");
         read.ReadFile();
 
+    }
+
+    public void writeToFile(String str) {
+        try {
+            FileWriter write = new FileWriter(path, appendFile);
+            PrintWriter print = new PrintWriter(write);
+            print.println(str);
+            print.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
-    public void writeToFile(String str) throws IOException {
-        FileWriter write = new FileWriter(path, appendFile);
-        PrintWriter print = new PrintWriter(write);
-        print.println(str);
-        print.close();
-
     }
 }
 
